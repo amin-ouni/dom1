@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2pac</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/676c11f96c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+        <nav id="nav-computer">
+        
+          <span id="box-logo">
+            <a target="_blank" href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q"><img src="https://tse4.mm.bing.net/th?id=OIP.VdcsRggwWfsl9mnpG0rdDwHaHa&pid=Api&P=0&w=300&h=300" id="logo"/></a>
+            <a href="#"><h1 id="website-name">GELZZ MEN </h1></a>
+          </span>
+        
+          <div id="nav-links"> 
+            <ul>
+              <li><a href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q">Accessoires</a></li>
+              <li><a href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q"> men fashion</a></li>
+              <li><a href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q">women fashion</a></li>
+              </ul>
+          </div>
+        
+        </nav>
+        
+        </header>
+
+        <main>
+        
+     <center> 
+<div class="shop">
+
+
+      <div class="nike">
+        <hr>
+        <br>
+        <img  class="jordon" src="https://tse4.mm.bing.net/th?id=OIP.fcEQ2IPmr4eoPtFi6EAXLgHaE8&pid=Api&P=0&w=254&h=170" width="260px" height="210px" alt="">
+
+        <h1 >  /nike air jordan/         </h1>
+        <br>
+        <h4>price</h4>
+        <h2>499($)</h2>
+        <br>
+        <hr>
+        <br>
+        <input class="quantity" value="0" type="text" name="" id="">
+       <button id="btna" class="plus">
+        +
+       </button>
+       <button class="moin">-</button>
+
+        <h4>quantity between (1 and 100)</h4>
+        <br>
+        <button   style="font-size:24px">  <i class="fa fa-heart"></i></button>
+        
+      </div>
+      
+
+      <div class="nike">
+        <hr>
+        <br>
+        
+        <img class="shirt" src="https://tse1.mm.bing.net/th?id=OIP.KSRCq3Yap4W16x0l8sh6aQHaHa&pid=Api&P=0&w=300&h=300" width="300px" height="210px" alt="">
+      
+        
+        <h1> /t-shirt hip-hop/  </h1>
+        <br>
+        <h4>price</h4>
+        <h2>79($)</h2>
+        <br>
+
+        <hr>
+        <br>
+        <input class="quantity" value="0" type="text" name="" id="">
+        <button class="plus">
+         +
+        </button>
+        <button class="moin">-</button>
+ 
+        <h4>quantity between (1 and 100)</h4>
+        <br>
+
+        <button  style="font-size:24px">  <i class="fa fa-heart"></i></button>
+      </div>
+
+      <div>
+        <hr>
+        <br>
+
+      <img class="jeans" src="https://tse1.mm.bing.net/th?id=OIP.DS_3LBZL0RLcktS_-7psXwHaJ4&pid=Api&P=0&w=300&h=300" width="260px" height="210px" alt="">
+      
+      <h1>/Jeans/   </h1>
+      <br>
+        <h4>price</h4>
+        <h2>185($)</h2>
+        <br>
+        <hr>
+        <br>
+        
+        <input class="quantity" value="0" type="text" name="" id="">
+        <button class="plus">
+         +
+         
+        </button>
+        <button class="moin">-</button>
+ 
+        <h4>quantity between (1 and 100)</h4>
+        <br>
+        
+        <button style="font-size:24px">  <i class="fa fa-heart"></i></button>
+      </div>
+      
+      
+
+      <!-- <div> -->
+
+      <!-- <img class="short" src="https://tse2.mm.bing.net/th?id=OIP.-CbJUdk5G0s-ef5JR3LEjwHaHa&pid=Api&P=0&w=300&h=300" width="250px" height="190px" alt=""> -->
+
+      <!-- </div> -->
+
+
+</div>
+
+    </center>       
+
+</main>
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+var elem = document.getElementsByClassName('fa-heart');
+
+ for(let i=0 ; i<elem.length ;i++)
+ {
+  elem[i].addEventListener('click',function(){ 
+  elem[i].classList.toggle('color');
+ })
+ }
+
+
+var plusBtns =document.getElementsByClassName('plus')
+for(let i=0;i<plusBtns.length; i++ ){
+  plusBtns[i].addEventListener('click',function(event){
+    var cible=event.target
+    //console.log(cible.previousElementSibling)
+    var qte=cible.previousElementSibling
+    qte.value=parseInt(qte.value)+1
+
+
+  })
+}
+
+var quantityelem = document.getElementsByClassName('quantity');
+ var moinBtns =document.getElementsByClassName('moin')
+
+ for(let i=0;i<moinBtns.length; i++ ){
+   moinBtns[i].addEventListener('click',function(){
+    if (quantityelem[i].value>0 ) {
+
+   quantityelem[i].value--}
+
+   })
+  
+}
+
+
+
+
+/*function changecolor() {
+var elem = document.getElementsByClassName('fa-heart');
+
+elem.classList.toggle("color");
+
+}*/
+
+
+
+
+</script>
+    
+</body>
+</html>
